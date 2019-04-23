@@ -14,7 +14,7 @@ class NewLocationControl extends React.Component {
       exampleHours: ' '
 
     };
-    this.handleFormSubmission = this.handleFormSubmission.bind(this);
+   this.handleFormSubmission = this.handleFormSubmission.bind(this);
 
 
   }
@@ -25,6 +25,8 @@ class NewLocationControl extends React.Component {
 
   render(){
     let currentlyVisibleContent = null;
+    console.log(this.props.onNewLocationCreation)
+    console.log(this.props.test)
     if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewLocationForm onNewLocationCreation={this.props.onNewLocationCreation} />;
     } else {
@@ -39,7 +41,7 @@ class NewLocationControl extends React.Component {
 }
 
 NewLocationControl.propTypes = {
-  onNewLocationCreation: ProTypes.func
+  onNewLocationCreation: PropTypes.func
 };
 
 

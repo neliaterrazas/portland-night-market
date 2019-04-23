@@ -8,6 +8,7 @@ function Img(){
       <style jsx> {`
           width: 100vw;
           height: auto;
+        
 			`}
       </style>
       <img src={bridge} alt="bridge"></img>

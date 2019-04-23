@@ -1,6 +1,5 @@
 import React from 'react';
 import Schedule from './Schedule';
-import MarketSchedule from '../model/LocationData.js';
 import PropTypes from 'prop-types';
 
 
@@ -30,7 +29,7 @@ function DisplaySchedule(props){
   );
 }
 
-MarketSchedule.propTypes = {
+DisplaySchedule.propTypes = {
   marketSchedule: PropTypes.array
 };
 

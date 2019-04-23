@@ -2,7 +2,7 @@ import React from 'react';
 import veggies from '../assets/images/veggies.jpg';
 import PropTypes from 'prop-types';
 
-function NewTicketForm(props){
+function NewLocationForm(props){
   let _nuLocation = null;
   let _nuDay = null;
   let _nuHours = null;
@@ -66,8 +66,9 @@ function NewTicketForm(props){
     </div>
   );
 }
+
 NewLocationForm.propTypes = {
   onNewLocationCreation: PropTypes.func
 };
 
-export default NewTicketForm;
+export default NewLocationForm;
