@@ -42,13 +42,7 @@ function Header(){
      `}</style>
       <Links/>
       <Icon/>
-      <div className="portland">
-        <h1>Portland</h1>
-        <div className="nightMarket">
-          <h4>Night</h4>
-          <h5>Market</h5>
-        </div>
-      </div>
+      
 
     </div>
   );

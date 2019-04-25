@@ -1,22 +1,16 @@
 import React from 'react';
-import Body from './Body';
+
 import Header from './Header';
 import Footer from './Footer';
-import { library } from '@fortawesome/fontawesome-svg-core';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
-import DisplayProduce from './DisplayProduce';
-import NewLocationControl from './NewLocationControl';
+import DisplayProduce from './schedules/DisplayProduce';
+import NewLocationControl from './schedules/NewLocationControl';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
-import DisplaySchedule from './DisplaySchedule';
+import DisplaySchedule from './schedules/DisplaySchedule';
 import marketSchedule from '../model/LocationData';
 
-library.add(faStroopwafel);
-// import Body from './Body';
-// import Icon from './Icon';
-// import Nav from './Nav';
-// import Ticket from './Links';
+
+
 
 
 
@@ -44,7 +38,7 @@ class App extends React.Component{
       <div>
       <style jsx global>{`
         body {
-          background-color: black;
+          background-color: #170829;
           margin: 0;
           padding: 0;
           color: #FFF;

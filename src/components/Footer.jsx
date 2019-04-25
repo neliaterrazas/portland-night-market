@@ -7,7 +7,6 @@ import Icon from './Icon';
 
 function Footer(){
   const whiteTest = {
-    color: 'white',
     border: '1px solid blue'
   };
   return (
