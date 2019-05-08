@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Header from './Header';
 import Footer from './Footer';
 import DisplayProduce from './schedules/DisplayProduce';
@@ -8,6 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 import DisplaySchedule from './schedules/DisplaySchedule';
 import marketSchedule from '../model/LocationData';
+import Sample from './Sample';
 
 
 
@@ -52,6 +52,7 @@ class App extends React.Component{
           <Route exact path = '/newlocationcontrol'render={() =><NewLocationControl  onNewLocationCreation={this.handleAddingNewLocationForm}/>} />
           <Route component={Error404}/>
         </Switch>
+        <Sample/>
         <Footer/>
         </div>
     );
